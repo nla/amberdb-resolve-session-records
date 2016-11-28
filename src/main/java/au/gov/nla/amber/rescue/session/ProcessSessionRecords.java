@@ -33,8 +33,8 @@ public class ProcessSessionRecords {
         amberdb.setPassword(password);
         AmberDb amberDb = new AmberDb((DataSource) amberdb, new File(path).toPath());
  
-        try (AmberSession ambersession = amberDb.resume(session)) {
-            ambersession.commit(info, moreinfo);
+        try (AmberSession ambersession = amberDb.begin()) {
+            ambersession.commitPersistedSession(session, info, moreinfo);
         }
     }
 }
