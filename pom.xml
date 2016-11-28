@@ -50,7 +50,7 @@
 								<!-- add Main-Class to manifest file -->
 								<transformer
 									implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-									<mainClass>au.gov.nla.amber.migratecaptiontext.MigrateCaptionText</mainClass>
+									<mainClass>au.gov.nla.amber.rescue.session.ProcessSessionRecords</mainClass>
 								</transformer>
 							</transformers>
 						</configuration>
@@ -66,6 +66,11 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<version>6.0.2</version>
 		</dependency>
+                <dependency>
+                        <groupId>com.h2database</groupId>
+                        <artifactId>h2</artifactId>
+                        <version>1.4.191</version>
+                </dependency>
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-lang3</artifactId>
