@@ -8,5 +8,5 @@ mvn package
 
 To run:
 ~~~~
-java -jar resolve-session-records-1.jar <amberdb-url> <user> <password> <session-key> <store-path> <info> <moreinfo>
+java -jar resolve-session-records-1.jar <amberdb-url> <user> <password> <session-key> <store-path> <commit-user> <commit-info>
 ~~~~
